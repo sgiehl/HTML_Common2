@@ -566,6 +566,7 @@ abstract class HTML_Common2 implements ArrayAccess
      * @link http://php.net/manual/en/arrayaccess.offsetget.php
      * @see getAttribute()
      */
+    #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
         return $this->getAttribute($offset);
