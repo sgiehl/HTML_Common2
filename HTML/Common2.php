@@ -552,7 +552,7 @@ abstract class HTML_Common2 implements ArrayAccess
      * @return boolean Returns true on success or false on failure.
      * @link http://php.net/manual/en/arrayaccess.offsetexists.php
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return isset($this->attributes[strtolower($offset)]);
     }
