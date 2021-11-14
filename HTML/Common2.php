@@ -582,7 +582,7 @@ abstract class HTML_Common2 implements ArrayAccess
      * @link http://php.net/manual/en/arrayaccess.offsetset.php
      * @see setAttribute()
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet($offset, $value): void
     {
         if (null !== $offset) {
             $this->setAttribute($offset, $value);
@@ -601,7 +601,7 @@ abstract class HTML_Common2 implements ArrayAccess
      * @link http://php.net/manual/en/arrayaccess.offsetunset.php
      * @see removeAttribute()
      */
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
         $this->removeAttribute($offset);
     }
